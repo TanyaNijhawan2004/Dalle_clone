@@ -1,0 +1,20 @@
+export const surpriseMePrompts = [
+    'A coffee mug that changes color based on the temperature of the liquid inside',
+    'A futuristic cityscape with floating buildings and flying cars, digital art',
+    'A group of penguins playing ice hockey in Antarctica, illustration',
+    'An underwater scene with colorful coral reefs and exotic fish, watercolor painting',
+    'A mystical forest with glowing trees and fairies, acrylic painting',
+    'A steampunk-inspired robot playing the violin, digital art',
+    'A spaceship made entirely of candy and sweets, 3D rendering',
+    'A field of sunflowers stretching as far as the eye can see, photography',
+    'A vintage typewriter surrounded by blooming flowers, still life painting',
+    'A magical bookshelf filled with enchanted books, illustration',
+    'A serene mountain landscape at sunrise, oil painting',
+    'A group of elephants taking a bath in a river, watercolor painting',
+    'A cozy cabin in the woods with a crackling fireplace, digital art',
+    'A pair of ballet shoes floating in mid-air, photography',
+    'A surreal sky filled with floating islands and hot air balloons, digital art',
+    'A close-up photograph of a hummingbird in flight, capturing its vibrant colors',
+    'A futuristic robot chef preparing a gourmet meal, digital art',
+  ];
+  
