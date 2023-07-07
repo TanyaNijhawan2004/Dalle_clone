@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: Testing
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+      max-parallel: 1
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install server npm packages
+        run: npm ci
+        working-directory: server
+
+      - name: Install client npm packages
+        run: npm ci
+        working-directory: client
+
+      - name: Start server in the background
+        run: (cd server && npm start &)
+
+      - name: Start React app in the background
+        run: (cd client && npm start &)
