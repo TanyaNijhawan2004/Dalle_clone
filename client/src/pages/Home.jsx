@@ -5,6 +5,7 @@ import {Card , Form ,Loader} from '../Components';
 //functional component
 function RenderCards(props) {
   const { data, title } = props;
+  const a;
 
   if (data && data.length > 0) {
     return data.map((post) => <Card key={post._id} {...post} />);
