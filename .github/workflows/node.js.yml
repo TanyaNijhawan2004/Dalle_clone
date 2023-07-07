@@ -28,19 +28,19 @@ jobs:
     - name: Install Backend Dependencies
       run: |
         cd server
-        npm ci
+        npm ci --prefix ./server
 
     - name: Build Backend
       run: |
         cd server
-        npm run build --if-present
+        npm run build --if-present --prefix ./server
 
     - name: Install Frontend Dependencies
       run: |
         cd client
-        npm ci
+        npm ci --prefix ./client
 
     - name: Build Frontend
       run: |
         cd client
-        npm run build --if-present
+        npm run build --if-present --prefix ./client
