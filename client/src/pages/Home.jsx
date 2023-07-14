@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Card, Form, Loader } from '../Components';
 
 //functional component
+//updated by test
+//updated by test 1 again
 //update test2
 //update test2
 function RenderCards(props) {
