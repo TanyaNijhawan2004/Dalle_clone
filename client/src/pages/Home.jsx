@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, Form, Loader } from '../Components';
 
 //functional component
+//updated by test
 function RenderCards(props) {
   const { data, title } = props;
 
